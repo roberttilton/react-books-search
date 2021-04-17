@@ -55,7 +55,7 @@ class Saved extends Component {
               {/* YOUR CODE IS HERE */}
               {books.length ? (
             <List>
-              {books.map((post) => (
+              {books.map(() => (
                 <ListItem>
                   <Book />
                 </ListItem>
