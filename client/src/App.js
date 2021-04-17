@@ -13,6 +13,19 @@ function App() {
           One route for path='/saved" which renders the Saved  component and
           One route for all the rest of paths which renders the MoMatch page */}
         {/* YOUR CODE HERE */}
+        <Nav>
+        </Nav>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/saved">
+            <Saved />
+          </Route>
+          <Route>
+            <NoMatch />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
